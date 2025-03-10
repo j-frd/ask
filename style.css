@@ -1,0 +1,90 @@
+:root {
+    --primary-bg: #7FD8BE;
+    --secondary-bg: #0f0d0d;
+    --text-primary: #050505;
+    --text-secondary: #969696;
+    --yes: rgb(63, 214, 63);
+    --no: rgb(255, 72, 72);
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.canvas {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-bg);
+}
+
+.content {
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-bg);
+    border-radius: 50px;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    color: var(--text-secondary);
+}
+
+.buttons {
+    margin-top: 15%;
+    height: 40px;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    height: 40px;
+    width: 90px;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+#yes {
+    background-color: transparent;
+    border: 3px solid var(--yes);
+    box-shadow: 0 0 5px var(--yes), 0 0 25px var(--yes);
+    color: var(--yes);
+    letter-spacing: 2px;
+}
+
+#yes:hover {
+    color: var(--text-primary);
+    background-color: var(--yes);
+    box-shadow: 0px 0 5px var(--yes),
+    0 0 25px var(--yes), 0 0 50px var(--yes),
+    0 0 100px var(--yes), 0 0 150px var(--yes);
+}
+
+#no {
+    background-color: transparent;
+    border: 2px solid var(--no);
+    color: var(--no);
+    box-shadow: 0 0 5px var(--no), 0 0 25px var(--no);
+    letter-spacing: 2px;
+}
+
+#no:hover {
+    color: var(--text-primary);
+    background-color: var(--no);
+    box-shadow: 0 0 5px var(--no),
+    0 0 25px var(--no), 0 0 50px var(--no),
+    0 0 100px var(--no), 0 0 150px var(--no);
+}
